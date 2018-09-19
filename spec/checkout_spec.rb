@@ -1,9 +1,9 @@
 require 'checkout'
 
-describe Item do
-  let(:subject) { described_class.new(5) }
-
-  it 'is able to show the price' do
-    expect(subject.price).to eq(5)
-  end
+describe Checkout do
+  let(:item) { double :item }
+  
+    it 'can scan an item' do
+      expect(subject.scan(item)).to eq(item)
+    end
 end

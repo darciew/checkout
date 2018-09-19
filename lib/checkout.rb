@@ -1,10 +1,6 @@
-class Item
+class Checkout
 
-  def initialize(price)
-    @price = price
-  end
-
-  def price
-    @price
+  def scan(item)
+      item
   end
 end
